@@ -1,0 +1,455 @@
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: #ffcb9a;
+  padding-left: 250px;
+  padding-right: 250px;
+}
+/*styling search bar*/
+.placeholder {
+  text-decoration-color: rgb(212, 201, 201);
+  float: left;
+  margin-top: 20px;
+  margin-left: -10px;
+  border: medium none;
+  border-radius: 3px 3px 3px 3px;
+  padding: 8px 2px 7px 10px;
+  width: 42%;
+  font-style: italic;
+}
+.bg {
+  min-width: 1520px;
+  max-height: 270px;
+  margin-bottom: 18px;
+  /* background-size: cover;
+  padding: 120px;
+  justify-content: center;
+  display: flex; */
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: rgb(248, 247, 245);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: -15px;
+  line-height: 25px;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-style: italic;
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: -150px;
+  margin-right: 8px;
+}
+
+.header a.logo .ep {
+  font-family: adobe-clean, sans-serif;
+  margin-top: -2px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: -15px;
+}
+.Plus {
+  color: #fa5;
+}
+
+/* Change the background color on mouse-over */
+/* .header-right a:hover {
+  background-color: rgb(245, 232, 232);
+  color: #ffcb9a;
+} */
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: white;
+  color: #ffcb9a;
+  margin-top: 8px;
+  border: medium none;
+  border-radius: 3px 3px 3px 3px;
+  padding: 4px 25px 4px 25px;
+}
+
+/* Float the link section to the right */
+.header-right {
+  font-family: adobe-clean, sans-serif;
+  font-weight: 500;
+  size: 16px;
+  line-height: 5spx;
+  color: #ffffff;
+  float: right;
+  padding-top: 10px;
+}
+.more {
+  float: left;
+  overflow: hidden;
+}
+
+/* More button */
+.more .morebtn {
+  font-family: adobe-clean, sans-serif;
+  font-weight: 500;
+  size: 18px;
+  line-height: 20px;
+  color: #f8f7f5;
+  float: right;
+  font-size: 17px;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* More content (hidden by default) */
+.more-content {
+  margin-block: 20px;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 150px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.more-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to more links on hover */
+/* .more-content a:hover {
+  background-color: #ddd;
+  background-blend-mode: luminosity;
+} */
+
+/* Show the dropdown menu on hover */
+.more:hover .more-content {
+  display: block;
+  margin-top: 15px;
+}
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+/* stylling body */
+.dealday {
+  border-bottom: 5px, solid, grey;
+}
+.dealday p {
+  float: left;
+  margin-left: 10px;
+  font-size: 25px;
+  font-weight: bolder;
+  color: black;
+  font-style: italic;
+  margin-top: 1px;
+}
+.dealday p .dealRefresh {
+  font-style: normal;
+  font-size: 19px;
+  font-weight: normal;
+  margin-left: -66px;
+  color: rgb(136, 132, 132);
+}
+
+.dealday .viewmore {
+  font-family: adobe-clean, sans-serif;
+  font-size: 15px;
+  border: medium none;
+  text-decoration: none;
+  line-height: 5px;
+  background-origin: padding-box;
+  float: unset;
+  background-color: #fcc694;
+  color: white;
+  border: medium none;
+  border-radius: 3px 3px 3px 3px;
+  padding: 15px 25px 15px 25px;
+  box-shadow: rgb(160, 155, 155);
+}
+
+.fk {
+  float: right;
+  margin-top: -22px;
+  min-height: 330px;
+}
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  block-size: 50px;
+  align-content: flex-start;
+  margin-bottom: 215px;
+}
+.bed {
+  margin-top: 50px;
+  margin-left: -288px;
+  max-width: 160px;
+  min-height: 150px;
+  margin-right: 15px;
+  float: inline-start;
+  display: flex;
+  flex-wrap: wrap;
+}
+.bedcont p {
+  float: left;
+  margin-left: -235px;
+  margin-block-start: initial;
+  font-weight: bold;
+}
+.camera {
+  margin-top: 50px;
+  margin-left: -98px;
+  min-width: 150px;
+  max-height: 150px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.camcont p {
+  margin-left: -93px;
+  margin-block-start: initial;
+  font-weight: bold;
+}
+.bng {
+  margin-top: 50px;
+  margin-left: 30px;
+  max-width: 158px;
+  min-height: 150px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.bngcont p {
+  margin-left: 30px;
+  margin-block-start: initial;
+  font-weight: bold;
+}
+.nighty {
+  margin-top: 50px;
+  margin-left: 25px;
+  min-width: 150px;
+  max-height: 150px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.nightycont p {
+  text-align: center;
+  margin-left: 10px;
+  margin-block-start: initial;
+  font-weight: bold;
+}
+.toys {
+  margin-top: 50px;
+  margin-left: 28px;
+  min-width: 130px;
+  max-height: 150px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.toyscont p {
+  text-align: center;
+  margin-left: 10px;
+  margin-block-start: initial;
+  font-weight: bold;
+}
+.shoes {
+  margin-top: 50px;
+  margin-left: 30px;
+  min-width: 170px;
+  max-height: 150px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.shoescont p {
+  text-align: center;
+  margin-left: 28px;
+  margin-block-start: initial;
+  font-weight: bold;
+}
+.green {
+  font-size: 10px;
+  color: green;
+  font-weight: lighter;
+}
+.grey {
+  font-size: 10px;
+  color: gray;
+  font-weight: lighter;
+}
+.grey1 {
+  font-size: 12px;
+  color: black;
+  font-weight: bolder;
+  text-decoration: none;
+}
+.price {
+  font-size: 9.5px;
+  color: gray;
+  font-weight: 5px;
+  text-decoration: line-through;
+}
+.electronics {
+  min-width: 1519px;
+  max-height: 200px;
+}
+.dealday .viewall {
+  font-family: adobe-clean, sans-serif;
+  font-size: 20px;
+  border: medium none;
+  text-decoration: none;
+  line-height: 5px;
+  background-origin: padding-box;
+  float: right;
+  background-color: #fcc694;
+  margin-right: 40px;
+  color: white;
+  padding: 20px 45px 20px 45px;
+  box-shadow: rgb(160, 155, 155);
+}
+.dealday p .dealRefresh1 {
+  font-style: normal;
+  font-size: 19px;
+  font-weight: normal;
+  margin-left: -145px;
+  color: rgb(136, 132, 132);
+  margin-bottom: 190px;
+}
+.mousepad {
+  margin-top: 80px;
+  margin-left: -338px;
+  max-width: 160px;
+  min-height: 150px;
+  margin-right: 15px;
+  float: inline;
+  display: flex;
+  flex-wrap: wrap;
+}
+.mousepadcont p {
+  text-align: center;
+  margin-left: -535px;
+  margin-block-start: initial;
+  font-weight: bold;
+}
+
+.coolingpad {
+  margin-top: 80px;
+  margin-left: -152px;
+  max-width: 190px;
+  min-height: 152px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.coolingpadcont p {
+  text-align: center;
+  margin-left: -128px;
+  margin-block-start: initial;
+  font-weight: bold;
+}
+
+.webcams {
+  margin-top: 80px;
+  margin-left: 42px;
+  max-width: 158px;
+  min-height: 150px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.webcamscont p {
+  text-align: center;
+  margin-left: 28px;
+  margin-block-start: initial;
+  font-weight: bold;
+}
+.printers {
+  margin-top: 80px;
+  margin-left: 36px;
+  min-width: 150px;
+  max-height: 150px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.printerscont p {
+  text-align: center;
+  margin-left: 28px;
+  margin-block-start: initial;
+  font-weight: bold;
+}
+
+.keyboardskin {
+  margin-top: 80px;
+  margin-left: 35px;
+  max-width: 150px;
+  min-height: 150px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.keyboardskincont p {
+  text-align: center;
+  margin-left: 28px;
+  margin-block-start: initial;
+  font-weight: bold;
+}
+.backcover {
+  margin-top: 80px;
+  margin-left: 48px;
+  max-width: 165px;
+  min-height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.backcovercont p {
+  text-align: center;
+  margin-left: 50px;
+  margin-block-start: initial;
+  font-weight: bold;
+}
+
+.routers {
+  margin-top: -215px;
+  margin-right: 490px;
+  min-width: 160px;
+  max-height: 150px;
+  float: right;
+  display: flex;
+  flex-wrap: wrap;
+}
+.routerscont p {
+  text-align: center;
+  margin-right: 1580px;
+  margin-block-start: initial;
+  font-weight: bold;
+  float: right;
+}
+.footer {
+  margin-top: 25px;
+  max-width: 95rem;
+}
